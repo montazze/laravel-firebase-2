@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "edbd3878aa6be70ed3b9665a89a2b1fd",
-    "content-hash": "7d29ce45e2060c50d58f55463e6653d6",
+    "hash": "061719c78c46ff1303f14fe3e4e76c3b",
+    "content-hash": "4c74d30044204f86b096a95a6b0f7321",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -399,6 +399,48 @@
                 "tokenizer"
             ],
             "time": "2015-12-05 17:17:57"
+        },
+        {
+            "name": "ktamas77/firebase-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ktamas77/firebase-php.git",
+                "reference": "fbfeefe8437672b983a9efb340bfd0db08bfe71a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ktamas77/firebase-php/zipball/fbfeefe8437672b983a9efb340bfd0db08bfe71a",
+                "reference": "fbfeefe8437672b983a9efb340bfd0db08bfe71a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tamas Kalman",
+                    "email": "ktamas77@gmail.com"
+                }
+            ],
+            "description": "Firebase PHP Client",
+            "homepage": "https://github.com/ktamas77/firebase-php",
+            "keywords": [
+                "firebase",
+                "rest",
+                "wrapper"
+            ],
+            "time": "2016-07-29 07:56:15"
         },
         {
             "name": "laravel/framework",
@@ -3299,7 +3341,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ktamas77/firebase-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

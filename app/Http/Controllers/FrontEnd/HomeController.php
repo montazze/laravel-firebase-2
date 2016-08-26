@@ -12,10 +12,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $value = $this->client->get('url-site');
-        echo "<pre>";
-        print_r($value = $value);
-        $this->client->del('url-site');
-        exit();
+        //test redis cache
+        // $value = $this->client->get('url-site');
+        // echo "<pre>";
+        // print_r($value = $value);
+        // $this->client->del('url-site');
+        // exit();
+        
     }
 }
