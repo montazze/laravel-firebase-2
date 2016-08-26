@@ -12,6 +12,10 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
     protected $client;
+    const DEFAULT_URL = 'https://myproject-f2f21.firebaseio.com';
+    const DEFAULT_TOKEN = '47y7d6aXY3Q92SidXL78vwhcv403E62pqCsI78I4';
+    const DEFAULT_PATH = '/database/my_laravel';
+    protected $firebase;
     public function initialize()
     {
         \Predis\Autoloader::register();
@@ -33,6 +37,7 @@ class Controller extends BaseController
             $this->post_data = json_decode($content, true);
         }
          $this->client = new \Predis\Client();
+         $this->firebase = new \Firebase\FirebaseLib(self::DEFAULT_URL, self::DEFAULT_TOKEN);
      }
 		
 }
