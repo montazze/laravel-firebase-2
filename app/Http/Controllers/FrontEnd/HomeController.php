@@ -14,6 +14,12 @@ class HomeController extends Controller
 {
     public function index()
     {
+        
+         //$value = $this->client->get('url-site');
+         //echo "<pre>";
+         //print_r($value = $value);
+         //$this->client->del('url-site');
+        // exit();
         // $test = array(
         //     "foo" => "bar",
         //     "i_love" => "lamp",
