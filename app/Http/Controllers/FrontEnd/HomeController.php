@@ -14,7 +14,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        
+        echo '123'; die;
          //$value = $this->client->get('url-site');
          //echo "<pre>";
          //print_r($value = $value);

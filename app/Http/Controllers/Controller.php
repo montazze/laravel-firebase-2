@@ -27,7 +27,6 @@ class Controller extends BaseController
     }
     
      public function __construct(Request $request) {
-         parent::__construct();
         $this->initialize();
         $this->page = $request->get('page');
         if(!$this->page){
